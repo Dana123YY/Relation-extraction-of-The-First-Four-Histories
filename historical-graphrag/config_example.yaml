@@ -1,0 +1,24 @@
+# Example Configuration for Historical Figure GraphRAG System
+# Copy this file to config.yaml and fill in your actual credentials
+
+# LLM API Configuration
+llm_api_key: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+llm_base_url: "https://api.deepseek.com"  # or "https://api.openai.com/v1"
+llm_model: "deepseek-chat"  # or "gpt-4"
+
+# Neo4j Database Configuration
+neo4j_uri: "bolt://localhost:7687"
+neo4j_user: "neo4j"
+neo4j_password: "your-secure-password"
+neo4j_database: "shijigraphy"
+
+# Embedding Model Configuration
+# Download from: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+embedding_model_path: "models/paraphrase-multilingual-MiniLM-L12-v2"
+
+# Optional: Entity Alias Dictionary
+# Format: MainName:Alias1,Alias2,Alias3
+alias_dict_path: "data/entity_alias_dict.txt"
+
+# Optional: HTTP Proxy (if needed to access APIs)
+proxy: ""  # e.g., "http://localhost:7890"
